@@ -1,4 +1,4 @@
-This is a proof of concept of how to replicate a Postgres database to X, where X can be any data warehouse that supports JDBC connection.
+This is a proof of concept of how to perform real-time replication of a Postgres database to X, where X can be any data warehouse that supports JDBC connection.
 
 ## Usage
 
