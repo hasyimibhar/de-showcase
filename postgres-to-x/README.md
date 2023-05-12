@@ -51,7 +51,7 @@ UPDATE 1
 
 ## How does it work?
 
-<img src="architecture.png" \>
+<img src="architecture.png" />
 
 - Postgres CDC via debezium connector using logical replication
 - Each table is replicated to a topic
