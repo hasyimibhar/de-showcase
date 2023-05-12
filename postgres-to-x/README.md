@@ -48,3 +48,12 @@ psql -h 127.0.0.1 -p 5432 -d inventory -U postgres
 inventory=# update inventory.customers set email = 'foo@bar.com' where id = 1005;
 UPDATE 1
 ```
+
+## How does it work?
+
+<img src="architecture.png" \>
+
+- Postgres CDC via debezium connector using logical replication
+- Each table is replicated to a topic
+- Schema is managed via schema registry
+- JDBC sink then consumes the topics and inserts to the target data warehouse
